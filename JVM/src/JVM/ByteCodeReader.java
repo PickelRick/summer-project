@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class ByteCodeReader {
 	private ArrayList<String[]> result;
+	
 	public ArrayList<String[]> transfer(String byteCode){
 		result = new ArrayList<String[]>();
 		String[] lines = byteCode.split("\n");
