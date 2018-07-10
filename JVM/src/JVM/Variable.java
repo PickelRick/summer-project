@@ -2,33 +2,33 @@ package JVM;
 
 public class Variable {
 	private byte[] variable;
-	private String type;
+	private DataType type;
 	
 	public Variable(int intVariable) {
 		this.variable = Transfer.getBytes(intVariable);
-		this.type = "Integer";
+		this.type = DataType.INTEGER;
 	}
 	
 	public Variable(long longVariable) {
 		this.variable = Transfer.getBytes(longVariable);
-		this.type = "Long";
+		this.type = DataType.LONG;
 	}
 	
 	public Variable(float floatVariable) {
 		this.variable = Transfer.getBytes(floatVariable);
-		this.type = "Float";
+		this.type = DataType.FLOAT;
 	}
 	
 	public Variable(double doubleVariable) {
 		this.variable = Transfer.getBytes(doubleVariable);
-		this.type = "Double";
+		this.type = DataType.DOUBLE;
 	}
 	public Variable(String referenceVariable) {
 		this.variable = referenceVariable.getBytes();
-		this.type = "Adress";
+		this.type = DataType.ADDRESS;
 	}
 	
-	public String getType() {
+	public DataType getType() {
 		return this.type;
 	}
 	

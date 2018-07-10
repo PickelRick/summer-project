@@ -3,9 +3,9 @@ package JVM;
 public class Load implements Executable {
 	
 	private int slotNumber;
-	private String type;
+	private DataType type;
 	
-	public Load(int slotNumber,String type) {
+	public Load(int slotNumber,DataType type) {
 		this.slotNumber = slotNumber;
 		this.type = type;
 	}

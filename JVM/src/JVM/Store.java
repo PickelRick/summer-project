@@ -3,9 +3,9 @@ package JVM;
 public class Store implements Executable {
 	
 	private int slotNumber;
-	private String type;
+	private DataType type;
 	
-	public Store(int slotNumber,String type) {
+	public Store(int slotNumber,DataType type) {
 		this.slotNumber = slotNumber;
 		this.type = type;
 	}
